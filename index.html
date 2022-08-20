@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script defer src="javascript/index.js"></script>
+    <script src="https://kit.fontawesome.com/360ae52d1a.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+        type="text/javascript"></script>
+    <script src="https://raw.githack.com/hsynlms/autotyperjs/master/dist/autotyper.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>my portfolio</title>
+</head>
+
+<body class="w-full top-0">
+
+    <!-- lading page -->
+    <div class="loadingpage"></div>
+
+    <!-- background fixed page -->
+    <div class="home"></div>
+    <div class="relative" id="home"></div>
+
+    <!-- the main block  -->
+    <!-- <main class="md:container md:rounded-2xl absolute  md:bottom-1/2
+         md:right-1/2 md:translate-x-1/2 md:translate-y-1/2
+         my-0;
+           w-full h-screen md:h-5/6 bg-white md:shadow-xl"> -->
+    <!-- <main class=" container md:rounded-2xl absolute bg-white
+        bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2
+        h-screen  md:h-5/6 mx-auto "> -->
+    <div class="relative h-screen w-full ">
+        <main>
+            <!-- the header -->
+            <header>
+
+                <!-- the logo portfolio -->
+                <h1 class="portfoliologo">Portfolio</h1>
+
+                <!-- the hamburger lines to open the list  -->
+                <div class="hamburger">
+                    <div class="firstline duration-300 mb-2"></div>
+                    <div class="secondline mb-2 transition-none"></div>
+                    <div class="thirdline duration-300 "></div>
+                </div>
+
+                <!-- the list of missions -->
+                <ul class="navlist hidden sm:hidden">
+                    <li class="">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="#aboutus">About us</a>
+                    </li>
+                    <li class="">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class=" md:hidden features">
+                        <a href="#features">features</a>
+                    </li>
+                    <li title="change mode" class=" md:hidden">
+                        <span class="material-symbols-outlined mode">
+                            brightness_6
+                        </span>
+                    </li>
+                    <li title="change language" class="md:hidden lang flex justify-between gap-2">
+                        <span class="material-symbols-outlined">
+                            translate
+                        </span>
+                        <span> Arabic</span>
+                    </li>
+
+                    <!-- the list of options -->
+                    <li class="options">
+                        <div class="point mb-1"></div>
+                        <div class="point mb-1"></div>
+                        <div class="point"></div>
+
+
+                        <!-- the options of the list of options -->
+                        <div class="hidden features">
+                            <div title="change mode" class="">
+                                <span class="material-symbols-outlined mode">
+                                    brightness_6
+                                </span>
+                            </div>
+                            <div class="">
+                                <span class="material-symbols-outlined">
+                                    translate
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </header>
+
+            <!-- end of header -->
+
+            <!-- the main article in the middle including the photo and the main text -->
+            <article class="articleText">
+
+                <!-- the article including the text -->
+                <article>
+                    <h1 class="typer-target "></h1>
+                    <p class="">I am a
+                        front end developper and this my portfolio
+                        to show you my projects i have done . <br>
+                        so , you may contact me by clicking the button
+                        below </p>
+                    <button class="contact">
+                        <a href="mailto:mohamad.hm464@gmail.com">
+                            Contact me
+                        </a>
+                    </button>
+
+                </article>
+
+                <!-- the image -->
+                <img src="images/fourth.png" alt="">
+            </article>
+
+            <!-- end of the main article  -->
+
+            <!-- the blocks in the bottom  -->
+            <article class="blocks invisible transition-none">
+                <div>
+                    <span class="material-symbols-outlined closefeatures">
+                        close
+                    </span>
+                </div>
+                <article class="">
+                    <span class="material-symbols-outlined">
+                        computer
+                    </span>
+                    <h2 class="">software developper</h2>
+                    <p class="">
+                        A software developper is able to program any software
+                        or website the client needs for job or e commerce website.
+                    </p>
+                </article>
+                <article class="">
+                    <span class="material-symbols-outlined">
+                        settings
+                    </span>
+                    <h2 class="">maintainence</h2>
+                    <p class="">
+                        After giving you your projects you can maintain your website
+                        with us for 6 month after.
+                    </p>
+                </article>
+                <article class="">
+                    <span class="material-symbols-outlined">
+                        schedule
+                    </span>
+                    <h2 class="">great timing</h2>
+                    <p class="">
+                        your time matters , so we do not take a lot of time
+                        working your website , our service is quite fast.
+                    </p>
+                </article>
+            </article>
+
+        </main>
+    </div>
+    <div id="aboutus" class="logoes" data-aos="zoom-in">
+        <h1 class="">About Us</d>
+    </div>
+    <article class="aboutus">
+        <div class="abouttext">
+            <h1 data-aos="zoom-in" data-aos-duration="1000">Who Am I ? What Do I Do ?</h1>
+            <p data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200">First of all welcome to my website . <br>
+                I am hassan mostafa i study at the LU (lebanese university)
+                at the faculty of science (computer science), my ambition
+                is to be a programmer or a web developper. <br>
+                Currently I a front end developper. <br>
+                I work whith html , css , javascript and some css framwork like
+                bootstrap and tailwind css. <br>
+                By the way this website is designed by tailwind css. <br>
+                And later soon inshaallah i will learn react js as a front end framwork
+                and django python as backend framwork.
+            </p>
+            <button data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200" class="contact mt-10">
+                <a href="tel:+96181446801">Call me</a>
+            </button>
+        </div>
+        <div class="aboutimage w-full relative">
+            <div class="imagediv"></div>
+            <img data-aos="zoom-in" data-aos-duration="500" src="images/myimage.jfif" alt="">
+        </div>
+    </article>
+
+    <div id="projects" class="logoes" data-aos="zoom-in">
+        <h1>Projects</h1>
+    </div>
+    <div data-aos="zoom-in" class=" swiper mySwiper bg-gradient-to-t
+     from-transparent via-slate-300 to-transparent dark:via-slate-700  container mb-10 ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="projectstext">
+                    <h1>HSN STORE</h1>
+                    <img src="images/project1.png" alt="">
+
+                    <div class="stars flex gap-0 justify-start items-center">
+                        <span class="text-xl ">Rating :&nbsp;</span>
+                        <span class="material-symbols-rounded">
+                            star_rate
+                        </span>
+                        <span class="material-symbols-rounded">
+                            star_rate
+                        </span>
+                        <span class="material-symbols-rounded">
+                            star_half
+                        </span>
+                        <!-- <span class="material-symbols-outlined">
+                                    star
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        star
+                                        </span> -->
+                    </div>
+                    <!-- <p>My first website i have done , I made it after learning html 
+                        css and javascript , it is about a cars store </p> -->
+                    <div class="buttons">
+                        <button><a target="_blank" href="https://hsnstore.netlify.app">Visit Site</a></button>
+                        <button> Read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">no project yet</div>
+            <div class="swiper-slide">no project yet</div>
+            <div class="swiper-slide">no project yet</div>
+            <div class="swiper-slide">no project yet</div>
+
+        </div>
+        <div class="swiper-button-next "></div>
+        <div class="swiper-button-prev"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+    <div id="skills" data-aos="zoom-in" class="logoes">
+        <h1>Skills</h1>
+    </div>
+    <div class="skills ">
+        <div class="progresses text-center" data-aos="fade-up" data-aos-delay="100">
+            <h1>html</h1>
+            <div class="progress" id="cont" data-pct="90" data-progress="90">
+                <svg id="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="508.48" stroke-dashoffset="0">
+                    </circle>
+                    <circle id="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="282.74"
+                        stroke-dashoffset="0"></circle>
+                </svg>
+            </div>
+        </div>
+        <div class="progresses text-center" data-aos="fade-up" data-aos-delay="100">
+            <h1>css</h1>
+            <div class="progress" id="cont" data-pct="90" data-progress="90">
+                <svg id="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="508.48" stroke-dashoffset="0">
+                    </circle>
+                    <circle id="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="282.74"
+                        stroke-dashoffset="0"></circle>
+                </svg>
+            </div>
+        </div>
+        <div class="progresses text-center" data-aos="fade-up" data-aos-delay="200">
+            <h1>javascript</h1>
+            <div class="progress" id="cont" data-pct="85" data-progress="85">
+                <svg id="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="480.25" stroke-dashoffset="0">
+                    </circle>
+                    <circle id="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="282.74"
+                        stroke-dashoffset="0"></circle>
+                </svg>
+            </div>
+        </div>
+        <div class="progresses text-center" data-aos="fade-up" data-aos-delay="300">
+            <h1>css frameworks </h1>
+            <div class="progress" id="cont" data-pct="95" data-progress="95">
+                <svg id="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="536.75" stroke-dashoffset="0">
+                    </circle>
+                    <circle id="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="282.74"
+                        stroke-dashoffset="0"></circle>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logoes">
+            <h1>Footer</h1>
+        </div>
+        <div class="footeritems">
+            <div class="socials">
+                <h1>follow me here </h1>
+            <div class="icons">
+                <a target="_blank" href="https://www.facebook.com/ha.mo.1485537">
+                    <i class="fa-brands fa-facebook hover:text-blue-800"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/hassanmostafa28_7_2002/">
+                    <i class="fa-brands fa-instagram hover:text-orange-600"></i>
+                </a>
+                <a target="_blank" href="https://twitter.com/HassanM02918112">
+                    <i class="fa-brands fa-twitter hover:text-blue-500"></i>
+                </a>
+                <a target="_blank" href="https://github.com">
+                    <i class="fa-brands fa-github hover:text-black"></i>
+                </a>
+                
+            </div>
+            </div>
+            <div class="missions flex flex-col">
+                <h1>Go up</h1>
+                <a href="#home">Home</a>
+                <a href="#aboutus">About Us</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+            </div>
+            <div class="contacts">
+                <div class="contact mb-3">
+                    <i class="fa-solid fa-phone hover:text-blue-700"></i>
+                        <a href="tel:+96181446801">call me</a>
+                </div>
+                <div class="contact  ">
+                    <i class="fa-solid fa-envelope hover:text-green-500"></i>
+                    <a href="mailto:mohamad.hm464@gamil.com">send and email</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10">
+            <p class="text-slate-900 dark:text-slate-200">copy right : @hassan mostafa 2022  ©</p>
+        </div>
+    </footer>
+</body>
+
+</html>

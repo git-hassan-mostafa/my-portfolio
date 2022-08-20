@@ -1,0 +1,532 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+hide {
+    display: none;
+}
+html{
+    @apply scroll-smooth
+}
+*{
+    @apply duration-200 transition-all
+}
+.home{
+    @apply fixed top-0 w-full h-screen bg-slate-200 dark:bg-slate-800
+}
+.loadingpage{
+@apply z-50 w-full h-screen fixed bg-slate-200 dark:bg-slate-900;
+} 
+main{ 
+    @apply md:container bg-white w-full md:h-5/6 rounded-3xl
+          h-full dark:bg-slate-900 z-20 shadow-lg
+}
+header{
+@apply flex  text-slate-900 py-2 md:py-5 px-5 mb-8
+         md:px-10  justify-between md:bg-transparent
+          bg-slate-200 dark:bg-slate-800 md:dark:bg-transparent
+}
+header h1.portfoliologo{
+@apply  font-black md:text-3xl text-2xl p-2 border-x-4  border-slate-900
+ rounded-full dark:text-white dark:border-white
+}
+header .hamburger{
+@apply md:cursor-pointer duration-300 self-center ;
+}
+header .hamburger div{
+@apply w-7  h-0.5 firstline md:hidden  bg-slate-900 origin-right
+ dark:bg-white
+}
+header ul.navlist{
+@apply top-20  rounded-xl right-5
+                 bg-slate-300 text-center md:bg-transparent px-10 md:px-0
+                  py-5 md:py-0 absolute md:static md:flex items-center
+                   justify-center lg:gap-20 gap-10 dark:bg-slate-800
+                    md:dark:bg-transparent z-10
+}
+header ul.navlist li:not(:first-child){
+@apply font-extrabold pb-3 md:pb-0 text-lg text-slate-900
+ hover:text-slate-400 cursor-pointer dark:text-white
+  dark:hover:text-slate-500
+}
+header ul.navlist li:first-child{
+@apply font-extrabold pb-3 text-lg duration-300
+                     text-slate-900 md:bg-slate-100 md:shadow-md
+                      md:rounded-full md:px-4 md:py-2 hover:text-slate-400
+                       cursor-pointer dark:bg-slate-800 dark:text-white
+                       dark:hover:text-slate-500 
+                       }
+header ul.navlist li:last-child{
+@apply hidden relative md:flex flex-col justify-center
+                     items-center md:cursor-pointer w-10 h-10 rounded-full
+                      hover:bg-slate-200 transition-transform dark:hover:bg-slate-600
+}
+header ul.navlist li:last-child div.point{
+@apply w-1 bg-slate-900 h-1 rounded-full dark:bg-white
+}
+header ul.navlist li:last-child div.features{
+@apply absolute bg-slate-200 rounded-xl top-full right-1/2 px-5 py-2
+ dark:bg-slate-800
+}
+header ul.navlist li:last-child div.features div{
+@apply px-2 py-2 text-slate-900 font-black hover:text-slate-400 duration-300
+dark:text-white dark:hover:text-slate-500
+}
+header ul.navlist li.lang {
+@apply pb-0
+}
+.articleText{
+@apply absolute px-10 md:px-0  flex flex-col-reverse gap-10
+          md:flex-row  md:gap-20 xl:gap-40  md:left-10 lg:left-14
+}
+.articleText article{
+@apply w-full md:w-1/2
+}
+.articleText article h1{
+@apply pr-1 mb-5 text-2xl md:text-2xl font-black text-yellow-400
+ dark:text-yellow-500
+}
+.articleText article p{
+@apply pr-1  md:text-sm tracking-wider font-semibold  text-slate-500  mb-5 dark:text-slate-300
+}
+ button.contact{
+@apply px-3 py-3 md:px-4  bg-slate-900 rounded-full
+                     text-slate-300 hover:text-white font-bold
+                      tracking-wider duration-300 dark:bg-slate-200 
+                      dark:text-slate-900 dark:hover:text-slate-500
+}
+.articleText img{
+@apply w-full md:w-80
+             myimage lg:w-96 mx-auto  md:mx-0
+}
+/* .blocks{
+@apply  text-center bg-slate-100 md:bg-transparent md:flex
+              md:bottom-5 absolute justify-center gap-10 w-full
+                h-44  lg:bottom-5 right-1/2 translate-x-1/2 z-50
+                dark:bg-slate-800 md:dark:bg-transparent
+} */
+.blocks{
+    @apply bg-slate-100 md:bg-transparent md:absolute md:bottom-5 h-screen md:h-44
+    left-1/2 -translate-x-1/2 flex gap-5 dark:bg-slate-800 md:visible transition-none
+    md:dark:bg-transparent
+}
+.blocks div{
+@apply md:hidden absolute top-5 right-5 cursor-pointer transition-none
+}
+.blocks div span{
+@apply lg:hidden text-slate-900 dark:text-white
+}
+.blocks article{
+@apply w-44 h-44 bg-slate-300 hover:bg-slate-400 p-2
+                 shadow-2xl rounded-2xl justify-between items-center flex flex-col
+                 dark:bg-slate-800 dark:hover:bg-slate-600
+                
+}
+.blocks article span{
+@apply text-slate-900 text-5xl dark:text-white
+}
+.blocks article h2{
+@apply text-sm  font-black text-slate-900 dark:text-slate-100 tracking-wider
+}
+.blocks article p{
+@apply text-xs text-center font-bold text-slate-700 dark:text-slate-300
+}
+.logoes{
+    @apply container relative mx-auto text-center flex justify-center m-5
+}
+.logoes h1{
+@apply   text-3xl md:text-4xl w-fit font-black select-none m-5 relative text-yellow-400
+ before:absolute before:-top-2 before:-left-2 before:bg-transparent before:w-1/2
+  before:h-1/2 before:border-spacing-1 before:border-slate-300 before:border-l-4
+  before:border-t-4 before:duration-300 hover:before:w-full hover:before:h-full
+ after:absolute after:-bottom-2 after:-right-2 after:bg-transparent after:w-1/2
+ after:h-1/2 after:border-spacing-1 after:border-slate-300 after:border-r-4
+ after:border-b-4 after:duration-300 hover:after:w-full hover:after:h-full
+ dark:text-yellow-500 dark:before:border-slate-700 dark:after:border-slate-700
+}
+article.aboutus{
+    @apply  bg-white w-full relative md:container mx-auto z-10
+    rounded-3xl p-10 lg:p-20 flex flex-col-reverse md:grid grid-cols-3
+     gap-10 dark:bg-slate-900 items-center shadow-xl
+}
+article.aboutus .abouttext{
+    @apply col-span-2 
+}
+article.aboutus .abouttext h1{
+    @apply font-black text-3xl mb-10 text-yellow-400 dark:text-yellow-500
+}
+article.aboutus .abouttext p{
+    @apply text-slate-900 font-bold text-sm md:text-lg dark:text-slate-200
+}
+article.aboutus .aboutimage img{
+    @apply col-span-1 w-3/4 md:w-full  z-50 
+}
+article.aboutus .aboutimage .imagediv{
+    @apply absolute bg-slate-900 -top-5 left-5 w-3/4 md:w-full h-full
+    dark:bg-slate-600 leading-10
+    -z-10
+}
+/* swiper  */
+.swiper-slide{
+    @apply  p-0  bg-white 
+    dark:bg-slate-900 rounded-xl text-yellow-400 dark:text-yellow-500
+}
+.swiper .swiper-slide .projectstext{
+   @apply  bg-white dark:bg-slate-900 
+   flex  w-full items-center p-2  flex-col gap-3
+}
+@layer {
+    .swiper-slide .projectstext .stars span{
+        @apply text-yellow-400 -m-0.5 text-3xl
+    }
+}
+.swiper-slide .projectstext img{
+    @apply w-2/6
+}
+.swiper-slide .projectstext p{
+    @apply text-slate-900 font-bold text-sm
+}
+.swiper-slide h1{
+    @apply  font-black text-2xl text-yellow-400 dark:text-yellow-500
+}
+.swiper-slide button:nth-child(1){
+    @apply bg-yellow-400 text-white px-2.5 py-1.5
+     dark:bg-yellow-500 dark:border-yellow-500
+    dark:text-slate-900  hover:bg-transparent
+     hover:text-yellow-400 dark:hover:text-yellow-500 dark:hover:bg-transparent
+}
+.swiper-slide button:nth-child(2){
+    @apply bg-transparent text-yellow-400 px-2 py-1.5
+     hover:bg-yellow-400 hover:text-white
+     dark:hover:text-slate-900 dark:hover:bg-yellow-500
+}
+.swiper-slide button{
+    border:1px solid ;
+    @apply border-yellow-400 dark:border-yellow-500 rounded-full
+}
+
+.skills{
+    @apply relative flex flex-wrap justify-center gap-x-20 rounded-3xl
+    dark:bg-slate-900 bg-white p-10 md:container mx-auto shadow-xl
+}
+.skills h1{
+    @apply text-slate-900 font-black text-2xl dark:text-slate-500 capitalize
+}
+.skills .progresses .progress{
+@apply relative text-center text-slate-900 dark:text-slate-500
+}
+
+footer{
+@apply md:container w-full bg-white dark:bg-slate-900 relative mx-auto
+mt-28 p-10 pt-0 text-center rounded-b-none rounded-t-3xl 
+}
+.footeritems{
+@apply flex 
+justify-center flex-col md:flex-row gap-10 md:gap-20 lg:gap-40
+xl:gap-60 items-center
+}
+footer .socials h1{
+@apply font-black text-slate-900 text-3xl capitalize
+dark:text-slate-200
+}
+footer .socials .icons{
+@apply flex gap-3 justify-center mt-1
+} 
+@layer{
+    footer .socials .icons a i{
+@apply text-slate-900 text-4xl dark:text-slate-200
+md:cursor-pointer 
+}
+}
+footer .missions h1{
+    @apply font-black text-slate-900 text-4xl capitalize
+dark:text-slate-200 mb-2
+}
+footer .missions a{
+@apply text-xl dark:text-slate-200 text-slate-900 font-black
+hover:text-slate-400 dark:hover:text-slate-400
+}
+footer .contacts .contact{
+   @apply flex items-center gap-2
+}
+@layer{
+    footer .contacts .contact i{
+@apply dark:text-slate-200 text-3xl text-slate-900
+}
+}
+footer .contacts .contact a{
+@apply text-slate-900 dark:text-slate-200 font-black
+text-xl hover:underline dark:decoration-slate-200 decoration-slate-900
+}
+/* article.blocks article{
+    background-size: cover;
+    background-position: top;
+}
+article.blocks article:nth-child(1){
+    background-image: url(../images/first.jpg);
+}
+article.blocks article:nth-child(2){
+    background-image: url(../images/second.jpg);
+}
+article.blocks article:nth-child(3){
+    background-image: url(../images/third.jpg);
+}
+article.blocks article:nth-child(4){
+    background-image: url(../images/fourth.jpg);
+} */
+@media (max-height:300px)and (max-width:768px) {
+    .myimage {
+        display: none;
+    }
+
+}
+
+@media (max-height:600px) and (max-width:960px) {
+    /* .blocks {
+        visibility: hidden;
+    } */
+}
+
+@media (max-height:400px) and (max-width:700px) {
+    .myimage {
+        display: none;
+    }
+
+    
+}
+
+@media (min-height:1000px) and (min-width:700px) {
+
+    .articleText {
+        top: 50%;
+        transform: translateY(-50%)
+    }
+}
+
+/* @media(max-width:1080px) and (min-width:768px){
+    .myimage{
+        width:320px;
+    }
+} */
+.firstline.rotate0 {
+    transform: rotate(-48deg);
+}
+
+.secondline.rotate1 {
+    visibility: hidden;
+}
+
+.thirdline.rotate2 {
+    transform: rotate(44deg);
+}
+
+@media (max-width:767px) {
+
+    /* main{
+        background-image: url('../images/whiteimage.jpg');
+        background-position: top;
+        background-size: cover;
+    } */
+    .articleText {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+     .blocks{
+        position:absolute;
+        overflow:auto;
+        width:100%;
+        top:0;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        position:fixed;
+    }
+    
+}
+@media (max-width:638px){
+    .articleText h1{
+        font-size:20px;
+        font-weight:bold;
+    }
+    .articleText p{
+        font-size:13px;
+    }
+
+}
+span.material-symbols-outlined{
+    font-size:30px;
+}
+span.closefeatures{
+font-size:50px;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate3d(50%, -50%, 0px);
+    
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+/* body {
+	background-color: #4144b1;
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+} */
+
+/* main {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 50px;
+	text-align: center;
+}  */
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.typer-target {
+    animation: blink-caret 0.5s step-end infinite alternate;
+    border-right: 2px solid rgb(25, 17, 75);
+    font-weight: bold;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.typer-target>span {
+    font-weight: 300;
+}
+
+.btn-run {
+    background-color: #3d90ef;
+    border: 0;
+    border-radius: 27.5px;
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.05);
+    color: #ffffff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+    min-width: 150px;
+    outline: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.btn-run:active {
+    box-shadow: inset 0 3px 5px 0px rgba(0, 0, 0, .1);
+}
+
+
+
+
+
+/* for slider */
+html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 250px;
+        cursor:grab;
+      }
+      @media (min-width:1280px){
+        /* .swiper{
+            height:250px
+        } */
+      }
+      /* .swiper-wrapper{
+        height:100vh;
+      } */
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      /* .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      } */
+
+
+      /* for the svg cirle */
+#svg circle {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1s linear;
+    stroke: #666;
+    stroke-width: 1em;
+  }
+  #svg #bar {
+    stroke:rgb(255, 187, 0);
+
+    @apply transition-all duration-1000 delay-300 rounded-full
+  }
+  #cont {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: 2em auto;
+    /* box-shadow: 0 0 1em black; */
+    border-radius: 100%;
+    position: relative;
+  }
+  #cont:after {
+    position: absolute;
+    display: block;
+    height: 160px;
+    width: 160px;
+    left: 50%;
+    top: 50%;
+    /* box-shadow: inset 0 0 1em black; */
+    content: attr(data-pct)"%";
+    margin-top: -80px;
+    margin-left: -80px;
+    border-radius: 100%;
+    line-height: 160px;
+    font-size: 2em;
+    /* text-shadow: 0 0 0.5em black; */
+  }
